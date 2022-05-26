@@ -17,7 +17,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
         // password: configService.get<string>('DATABASE_PASSWORD'),
         entities: ['dist/**/*.entity{.ts,.js}'],
         // namingStrategy: new SnakeNamingStrategy(),
-        // synchronize: true,
+        synchronize: true,
         url: process.env.DATABASE_URL,
         ssl: {
           rejectUnauthorized: false,
